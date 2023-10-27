@@ -11,3 +11,9 @@ __Code:__
 let num = 5;
 beepBoop(num);
 __Expected Output:__ [0, 'Beep', 2, 3, 4, 5]
+
+__Test #3:__ "It should replace numbers that contain a "2" with "Boop"
+__Code:__
+let num = 5;
+beepBoop(num);
+__Expected Output:__ [0, 'Beep', 'Boop', 3, 4, 5]
