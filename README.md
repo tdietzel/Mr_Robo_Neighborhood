@@ -5,3 +5,9 @@ __Code:__
 let num = 5;
 beepBoop(num);
 __Expected Output:__ [0, 1, 2, 3, 4, 5]
+
+__Test #2:__ "It should replace numbers that contain a "1" with "Beep"
+__Code:__
+let num = 5;
+beepBoop(num);
+__Expected Output:__ [0, 'Beep', 2, 3, 4, 5]
