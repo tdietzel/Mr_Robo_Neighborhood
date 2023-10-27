@@ -23,3 +23,9 @@ __Code:__
 let num = 5;
 beepBoop(num);
 __Expected Output:__ [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5]
+
+__Test #5:__ "It should return numbers > 9 into an array separating the digits."
+__Code:__
+let num = 10;
+beepBoop(num);
+__Expected Output:__ ['1', '0']

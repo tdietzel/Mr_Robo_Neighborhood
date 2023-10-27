@@ -1,4 +1,5 @@
 let inputArray = [];
+let splitNumberArray = [];
 function beepBoop(num) {
     for (let i = 0; i <= num; i++) {
         if (i === 3) {
@@ -7,6 +8,11 @@ function beepBoop(num) {
             inputArray.push("Boop");
         } else if (i === 1) {
             inputArray.push("Beep");
+        }
+        if (i > 9) {
+            let numString = i.toString();
+            splitNumberArray = numString.split('');
+            console.log(splitNumberArray)
         } else {
             inputArray.push(i);
         }
