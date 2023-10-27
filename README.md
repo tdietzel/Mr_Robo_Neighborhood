@@ -29,3 +29,9 @@ __Code:__
 let num = 10;
 beepBoop(num);
 __Expected Output:__ ['1', '0']
+
+__Test #6:__ "It should return numbers > 9 with the correct phrase according to hierarchy"
+__Code:__
+let num = 23;
+beepBoop(num);
+__Expected Output:__ [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
