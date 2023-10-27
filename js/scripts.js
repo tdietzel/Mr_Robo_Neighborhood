@@ -18,6 +18,7 @@ function displayResults(inputArray) {
 function beepBoop(userNum, userName) {
     let inputArray = [];
     let splitNumberArray = [];
+    const directionChoice = document.querySelector("input[name='direction']:checked").value;
     for (let i = 0; i <= userNum; i++) {
         if (i === 3) {
             inputArray.push("Won't you be my neighbor, " + userName + " ?");
@@ -39,5 +40,9 @@ function beepBoop(userNum, userName) {
             inputArray.push(i);
         }
     }
-    displayResults(inputArray);
+    if (directionChoice === 'forward'){
+        displayResults(inputArray);
+    } else if (directionChoice === 'backward') {
+        displayResults(inputArray.reverse());
+    }
 }
