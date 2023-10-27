@@ -6,7 +6,17 @@ window.addEventListener("load", () => {
         const userNum = parseInt(document.getElementById("userNum").value);
         const userName = document.getElementById("userName").value;
         beepBoop(userNum, userName);
-    });    
+    });
+
+    const toggle = document.getElementById("toggle");
+    toggle.onclick = function() {
+        document.body.classList.toggle("light-theme");
+        if (document.body.classList.contains("light-theme")) {
+            toggle.src = "img/moon.png";
+        } else {
+            toggle.src = "img/sun.png";
+        }
+    }       
 });
 
 function displayResults(inputArray) {
