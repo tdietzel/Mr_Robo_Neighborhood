@@ -12,13 +12,43 @@ form {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color:aquamarine
+    color:#DCD427
+}
+@keyframes slideInTop {
+    from {
+        transform: translateY(-200px);
+    }
+    to {
+        transform: translateY(0);
+    }
 }
 h1{
-    color:rgba(215, 212, 212, 0.649);
+    color: #F0F0F0;
     text-align: center;
+    margin-bottom:20px;
+    /* keyframe animation */
+    animation: slideInTop 2s ease-in;
 }
 .btn {
-    color:red;
-    margin-bottom: 50px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-weight: 700;
+    transition: transform 0.3s ease 0s;
+    border-width: 2px;
+    background-color:black;
+    color:white;
+}
+.btn:hover {
+    transform: translateY(-5px);
+}
+#direction {
+    font-style: italic;
+    color:#0092CC;
+}
+legend {
+    color:#969696;
+    font-family: 'Times New Roman';
+}
+p {
+    color:#FF3333;
 }
