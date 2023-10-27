@@ -1,0 +1,24 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    background-color: black;
+    color:white;
+}
+form {
+    width: 95%;
+    margin:auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:aquamarine
+}
+h1{
+    color:rgba(215, 212, 212, 0.649);
+    text-align: center;
+}
+.btn {
+    color:red;
+    margin-bottom: 50px;
+}
