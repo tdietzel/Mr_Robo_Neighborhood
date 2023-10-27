@@ -17,3 +17,9 @@ __Code:__
 let num = 5;
 beepBoop(num);
 __Expected Output:__ [0, 'Beep', 'Boop', 3, 4, 5]
+
+__Test #4:__ "It should replace numbers that contain a "3" with "Won't you be my neighbor?"
+__Code:__
+let num = 5;
+beepBoop(num);
+__Expected Output:__ [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5]
