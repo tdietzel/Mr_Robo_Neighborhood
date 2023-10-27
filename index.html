@@ -15,7 +15,17 @@
         <label for="userNum">Select a Number</label>
         <input type="text" id="userName" name="userName">
         <label for="userName">Choose a Name</label>
-        <button type="submit" class="btn btn-dark">Submit</button>
+        <fieldset>
+            <legend>Select a direction</legend>
+            <div id="direction">
+                <input type="radio" name="direction" id="forward" value="forward" checked>
+                <label for="forward">Display #'s': Lowest to Highest</label>
+                <br>
+                <input type="radio" name="direction" id="backward" value="backward">
+                <label for="backward">Display #'s: Highest to Lowest</label>
+            </div>
+        </fieldset>
+        <button type="submit" class="btn btn-light">Submit</button>
         <p id="results"></p>
     </form>
 </body>
