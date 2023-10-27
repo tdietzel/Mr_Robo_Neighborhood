@@ -1,7 +1,23 @@
-let inputArray = [];
-let splitNumberArray = [];
-function beepBoop(num) {
-    for (let i = 0; i <= num; i++) {
+// UI
+window.addEventListener("load", () => {
+    const form = document.querySelector("#numberInput");
+    form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        const userNum = parseInt(document.getElementById("userNum").value);
+        beepBoop(userNum);
+    });    
+});
+
+function displayResults(inputArray) {
+    const results = document.getElementById("results");
+    results.innerHTML = inputArray.join(", ");
+}
+
+// Business Logic
+function beepBoop(userNum) {
+    let inputArray = [];
+    let splitNumberArray = [];
+    for (let i = 0; i <= userNum; i++) {
         if (i === 3) {
             inputArray.push("Won't you be my neighbor?");
         } else if (i === 2) {
@@ -22,5 +38,5 @@ function beepBoop(num) {
             inputArray.push(i);
         }
     }
-    return inputArray;
+    displayResults(inputArray);
 }
