@@ -24,7 +24,7 @@ _A web application to practice and showcase loops. It focuses on using TDD to br
 * _Open Git BASH [Download Link](https://gitforwindows.org/)_
 * _Use 'git clone projecturl' to clone the project from the forked repo_
 * _Open the project in [VS Code](https://code.visualstudio.com/) (Git shortcut: enter 'code .' after navigating to the top level of the project directory)_
-* _View site on [github-pages]()_ __<~~ Try it out now!__
+* _View site on [github-pages](https://tdietzel22.github.io/Mr_Robo_Neighborhood/)_ __<~~ Try it out now!__
 
 ## Known Bugs
 
