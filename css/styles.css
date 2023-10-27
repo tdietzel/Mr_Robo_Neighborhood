@@ -51,4 +51,12 @@ legend {
 }
 p {
     color:#FF3333;
+    background-image: linear-gradient(85deg, white, blue);
+    background-size: 0% 3px;
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    transition: background-size 500ms ease-in;
+}
+p:hover {
+    background-size: 100% 3px;
 }
