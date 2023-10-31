@@ -27,7 +27,6 @@ function displayResults(inputArray) {
 // Business Logic
 function beepBoop(userNum, userName) {
     let inputArray = [];
-    let splitNumberArray = [];
     const directionChoice = document.querySelector("input[name='direction']:checked").value;
     for (let i = 0; i <= userNum; i++) {
         if (i === 3) {
@@ -38,12 +37,11 @@ function beepBoop(userNum, userName) {
             inputArray.push("Beep");
         } else if (i > 9) {
             let numString = i.toString();
-            splitNumberArray = numString.split('');
-            if (splitNumberArray.includes('3')) {
+            if (numString.includes('3')) {
                 inputArray.push("Won't you be my neighbor, " + userName + " ?");
-            } else if (splitNumberArray.includes('2')) {
+            } else if (numString.includes('2')) {
                 inputArray.push("Boop");
-            } else if (splitNumberArray.includes('1')) {
+            } else if (numString.includes('1')) {
                 inputArray.push("Beep");
             }
         } else {

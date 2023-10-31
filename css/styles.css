@@ -50,6 +50,7 @@ h1{
     margin-bottom: 40px;
     font-weight: 700;
     border-width: 2px;
+    border-radius: 10px;
     background-color:black;
     color:white;
     transition: transform 0.3s ease 0s;
