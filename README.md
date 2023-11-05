@@ -1,86 +1,131 @@
-# _Mr. Roboger's Neighborhood_
+# Mr. Roboger's Neighborhood
+#### By Trent Dietzel
 
-#### By _**Trent Dietzel**_
+## Table of Contents
+- [About](#about)
+- [Demo](#demo)
+- [Technologies Used](#technologies-used)
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [Known Bugs](#known-bugs)
+- [License](#license)
+- [Contact](#contact)
+- [Tests](#tests)
 
-#### _A web application that returns a list of values from 0 to the user's inputted number with substitutions made following a hierarchy of rules ( read below )._
+## About
+Mr. Roboger's Neighborhood is a web application designed to help users practice and showcase their skills in using loops. It focuses on implementing Test-Driven Development (TDD) to break down a problem into smaller, more manageable pieces of functionality.
+
+The primary functionality of the application is to take a user's input number and return a list of values from 0 to the input number. These values undergo specific substitutions based on the digits they contain:
+- For numbers that contain the digit 1, all digits are replaced with "Beep!"
+- For numbers that contain the digit 2, all digits are replaced with "Boop!"
+- For numbers that contain the digit 3, all digits are replaced with "Won't you be my neighbor?"
+
+These substitutions follow a hierarchical order, with "Won't you be my neighbor?" taking precedence over "Boop!" and "Boop!" taking precedence over "Beep!"
+
+## Demo
+You can try out the live demo of Mr. Roboger's Neighborhood [here](https://tdietzel22.github.io/Mr_Robo_Neighborhood/).
 
 ## Technologies Used
+- HTML
+- CSS
+- JavaScript
 
-* _HTML_
-* _CSS_
-* _JavaScript_
+## Features
+- **Number Sequence**: Generate a list of numbers from 0 to the user's input number.
+- **Digit Substitution**: Replace digits in the sequence based on the rules described above.
 
-## Description
+## Installation
 
-_A web application to practice and showcase loops. It focuses on using TDD to break down the problem into smaller pieces of functionality (*Bottom of page*). _It will take a number from the user and return a list of values from 0 to the user's inputted number with the following substitutions made within the returned list:_
-* For numbers that contain a 1, all digits are replaced with "Beep!"
-* For numbers that contain a 2, all digits are replaced with "Boop!"
-* For numbers that contain a 3, all digits are replaced with "Won't you be my neighbor?"
-* __These substitutions are written from least to most important. The first substitution should apply unless the second does, and the same with the second and third. In other words, the substitution for the number 1 should apply unless there's a 2 present in the number. Then, the substitution for the number 2 should apply unless there's a 3 present in the number.__
+Follow these steps to set up the project locally:
+1. Open Git BASH [Download Link](https://gitforwindows.org/)
+2. Clone the repository to your local machine:
+   ```bash
+   git clone https://github.com/yourusername/Mr_Robo_Neighborhood.git
+3. Open the project directory:
+   ```bash
+   cd Mr_Robo_Neighborhood
+4. Open the __index.html__ file in your web browser or use a code editor like __Visual Studio Code__ for further development.
 
-## Setup/Installation Requirements
+## Usage
 
-* _Fork your own copy of this repository from [GitHub](https://github.com/tdietzel22/Mr_Robo_Neighborhood)_
-* _Open Git BASH [Download Link](https://gitforwindows.org/)_
-* _Use 'git clone projecturl' to clone the project from the forked repo_
-* _Open the project in [VS Code](https://code.visualstudio.com/) (Git shortcut: enter 'code .' after navigating to the top level of the project directory)_
-* _View site on [github-pages](https://tdietzel22.github.io/Mr_Robo_Neighborhood/)_ __<~~ Try it out now!__
+To use Mr. Roboger's Neighborhood:
+1. Visit the website [Here](https://tdietzel22.github.io/Mr_Robo_Neighborhood/).
+2. Enter a number in the input field.
+3. Choose a direction for displaying the numbers (lowest to highest or highest to lowest).
+4. Click the "Submit" button.
+5. View the generated number sequence with substitutions.
+6. Have fun exploring!
+
+## Contributing
+
+I welcome contributions to improve the project. If you'd like to contribute, please follow these guidelines:
+1. Fork the project repository.
+2. Create a new branch for your feature or bug fix.
+3. Make your changes and test thoroughly.
+4. Commit your changes with a descriptive commit message.
+5. Push your branch to your forked repository.
+6. Create a pull request to the main repository.
 
 ## Known Bugs
 
 * _N/A_
 
 ## License
+This project is licensed under the MIT License. See the LICENSE file for details.
 
-_MIT License_
+## Contact
+For any questions, suggestions, or inquiries, please contact **Trent Dietzel** at _dietzelbiz@outlook.com_.
 
-Copyright (c) _2023 Trent Dietzel_
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-
-Copyright (c) _2023 Trent Dietzel_
-
-
-# __PROJECT TESTS__
+## __TESTS__
 
 ### Describe: beepBoop()
 
 __Test #1:__ "It should return an array of numbers from 0 to the user's inputted number"
 __Code:__
+``` 
 let num = 5;
 beepBoop(num);
+```
 __Expected Output:__ [0, 1, 2, 3, 4, 5]
 
 __Test #2:__ "It should replace numbers that contain a "1" with "Beep"
 __Code:__
+```
 let num = 5;
 beepBoop(num);
+```
 __Expected Output:__ [0, 'Beep', 2, 3, 4, 5]
 
 __Test #3:__ "It should replace numbers that contain a "2" with "Boop"
 __Code:__
+```
 let num = 5;
 beepBoop(num);
+```
 __Expected Output:__ [0, 'Beep', 'Boop', 3, 4, 5]
 
 __Test #4:__ "It should replace numbers that contain a "3" with "Won't you be my neighbor?"
 __Code:__
+```
 let num = 5;
 beepBoop(num);
+```
 __Expected Output:__ [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5]
 
 __Test #5:__ "It should return numbers > 9 into an array separating the digits."
 __Code:__
+```
 let num = 10;
 beepBoop(num);
+```
 __Expected Output:__ ['1', '0']
 
 __Test #6:__ "It should return numbers > 9 with the correct phrase according to hierarchy"
 __Code:__
+```
 let num = 23;
 beepBoop(num);
+```
 __Expected Output:__ [0, 'Beep', 'Boop', "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9, 'Beep', 'Beep', 'Boop', "Won't you be my neighbor?", 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Beep', 'Boop', 'Boop', 'Boop', "Won't you be my neighbor?"]
