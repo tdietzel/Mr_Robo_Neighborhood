@@ -1,19 +1,23 @@
-:root{
-    --primary-color:black;
-    --secondary-color:white;
-    --accent-color:#0092CC;
+/* Define CSS variables for color customization */
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+    --accent-color: #0092CC;
 }
-.light-theme{
-    --primary-color:white;
-    --secondary-color:black;
-    --accent-color:black;
+/* Define styles for the light theme by toggling the "light-theme" class */
+.light-theme {
+    --primary-color: white;
+    --secondary-color: black;
+    --accent-color: black;
 }
+/* Apply styles to the HTML and body elements for overall layout */
 html, body {
     height: 100%;
     margin: 0;
     background-color: var(--primary-color);
     color: var(--secondary-color);
 }
+/* Style the form element for input and layout */
 form {
     width: 95%;
     margin: auto;
@@ -25,11 +29,13 @@ form {
     color: var(--accent-color);
     font-family: monospace;
 }
+/* Style the toggle element for light/dark mode */
 #toggle {
     width: 30px;
     cursor: pointer;
     margin-bottom: 20px;
 }
+/* Define a keyframe animation for h1 element */
 @keyframes slideInTop {
     from {
         transform: translateY(-200px);
@@ -38,42 +44,48 @@ form {
         transform: translateY(0);
     }
 }
-h1{
+/* Style the h1 element */
+h1 {
     color: var(--secondary-color);
     text-align: center;
     margin-bottom: 20px;
-    /* keyframe animation */
-    animation: slideInTop 2s ease-in;
+    animation: slideInTop 2s ease-in; /* Apply the keyframe animation */
 }
+/* Style the button with a class of "btn" */
 .btn {
     margin-top: 20px;
     margin-bottom: 40px;
     font-weight: 700;
     border-width: 2px;
     border-radius: 10px;
-    background-color:black;
-    color:white;
+    background-color: black;
+    color: white;
     transition: transform 0.3s ease 0s;
 }
+/* Add a hover effect for the button */
 .btn:hover {
     transform: translateY(-5px);
 }
+/* Style the #direction element with specific font and accent color */
 #direction {
     font-family: impact;
     color: var(--accent-color);
 }
+/* Style the legend within fieldset */
 legend {
-    color:#969696;
+    color: #969696;
     font-family: 'Times New Roman';
 }
+/* Style the paragraph (results) element with specific colors and a gradient background */
 p {
-    color:#FF3333;
+    color: #FF3333;
     background-image: linear-gradient(85deg, var(--secondary-color), blue);
     background-size: 0% 3px;
     background-repeat: no-repeat;
     background-position: left bottom;
     transition: background-size 500ms ease-in;
 }
+/* Add a hover effect for the paragraph background */
 p:hover {
     background-size: 100% 3px;
 }

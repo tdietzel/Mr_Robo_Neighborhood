@@ -9,19 +9,24 @@
     <title>Robogers Neighborhood</title>
 </head>
 <body>
+    <!-- Start of a form with the id "numberInput" -->
     <form id="numberInput">
         <h1>Mr. Robogers Neighborhood</h1>
+        <!-- Image for toggling light/dark mode with alt text -->
         <img src="img/sun.png" alt="toggle light/dark mode." id="toggle">
         <input type="number" id="userNum" name="userNum">
         <label for="userNum">Select a Number</label>
         <input type="text" id="userName" name="userName">
         <label for="userName">Choose a Name</label>
+        <!-- Fieldset for radio buttons -->
         <fieldset>
             <legend>Select a direction</legend>
             <div id="direction">
+                <!-- Radio button for displaying numbers lowest to highest -->
                 <input type="radio" name="direction" id="forward" value="forward" checked>
                 <label for="forward">Display #'s': Lowest to Highest</label>
                 <br>
+                <!-- Radio button for displaying numbers highest to lowest -->
                 <input type="radio" name="direction" id="backward" value="backward">
                 <label for="backward">Display #'s: Highest to Lowest</label>
             </div>
